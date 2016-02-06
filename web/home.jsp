@@ -26,6 +26,67 @@
         /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
         }
     </style>
+    <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+    .carousel-control.right, .carousel-control.left {
+     background-image: none;
+     color: #f4511e;
+  }
+  .carousel-indicators li {
+      border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+      background-color: #f4511e;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+  }
+    
+  </style>
+    
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -79,10 +140,11 @@
                               <li><a href="mantenedorSalesSpecialist.jsp">Sales Specialist</a></li>
                             </ul>
                     </li>
-                    <li>
-                        <a style="color:white" href="index.html">Cerrar Sesión</a>
-                    </li>
                 </ul>
+                <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html"><span class="glyphicon glyphicon-log-in"></span> Cerrar Sesión</a></li>
+      </ul>
+                
             </div>
             <!-- /.navbar-collapse --> 
            
@@ -93,46 +155,57 @@
         </div>
         <!-- /.container -->
     </nav>
-
     <!-- Page Content -->
     <div class="container">
 
-        <div class="row">
+         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1>BH Smart V1.0</h1>
-                <p class="lead">Utilice los módulos disponibles para realizar el registro de oportunidades de negocio</p>
-                <ul class="list-unstyled">
-                    <li>Administración de contactos de la cartera de Clientes</li>
-                    <li>Registro de canidades para nuevas oportunidades</li>
-                    <li>Mantención de las Cuentas asignadas</li>
-                    <li>Registro de Oportunidades</li>
-                </ul>
+                <h1>BH Smart v1.0</h1>
+                <p class="lead">Su nueva cartera de cuentas y forecast comercial</p>
+                
             </div>
-            
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>HEAD</th>
-                        <th>HEAD</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>AAA</td>
-                        <td>BBB</td>
-                    </tr>
-                    <tr>
-                        <td>111</td>
-                        <td>222</td>
-                    </tr>
-                </tbody>
-            </table>
         </div>
         <!-- /.row -->
-
-    </div>
+        
     <!-- /.container -->
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
 
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"Utilice los módulos disponibles para realizar el registro de oportunidades de negocio"
+            <br><span style="font-style:normal;">Funcionalidad disponible en dispositivos moviles</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Administración de contactos de la cartera de Clientes"
+            <br><span style="font-style:normal;">búsqueda y actualización</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Mantención de cuentas asignadas en su cartera"
+            <br><span style="font-style:normal;">Focalización, candidatos, oportunidades</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+    
+   
+    
     <!-- jQuery Version 1.11.1 -->
     <script src="js/jquery.js"></script>
 

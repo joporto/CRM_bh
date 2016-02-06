@@ -4,6 +4,7 @@
     Author     : javierOporto
 --%>
 
+<%@page import="entity.Contacto"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -132,49 +133,36 @@
                 </tr>
             </thead>
             <tbody>
+                <%
+            try
+            {
+            dao.ContactoDAO ct = new dao.ContactoDAO();
+                      
+            for (Contacto arg : ct.getList()) 
+            {
+                    
+            %>
                 <tr>
-                    <td></td>
-                    <td></td>
+                    <td><%= arg.getNombrePcontacto()%></td>
+                    <td><%= arg%></td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
                 </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
+                 <%    
+            }
+            
+            }
+            catch(Exception e)
+            {
+                
+            }
+            
+            %>
             </tbody>
         </table>
-
+           
         
     </div>
     

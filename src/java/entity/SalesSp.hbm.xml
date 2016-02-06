@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 05-feb-2016 19:16:39 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.SalesSp" table="salesSp" schema="dbo" catalog="bhsmart" optimistic-lock="version">
+        <id name="idSalesSp" type="int">
+            <column name="idSalesSp" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombrePsalesSp" type="string">
+            <column name="nombrePSalesSp" not-null="true" />
+        </property>
+        <property name="nombreSsalesSp" type="string">
+            <column name="nombreSSalesSp" />
+        </property>
+        <property name="apellidoPsalesSp" type="string">
+            <column name="ApellidoPSalesSp" not-null="true" />
+        </property>
+        <property name="apellidoMsalesSp" type="string">
+            <column name="ApellidoMSalesSp" />
+        </property>
+        <property name="statusSalesSp" type="int">
+            <column name="statusSalesSp" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

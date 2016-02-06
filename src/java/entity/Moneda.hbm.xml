@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 05-feb-2016 19:16:39 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Moneda" table="moneda" schema="dbo" catalog="bhsmart" optimistic-lock="version">
+        <id name="idMoneda" type="int">
+            <column name="idMoneda" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombreMoneda" type="serializable">
+            <column name="nombreMoneda" not-null="true" />
+        </property>
+        <property name="factorUf" type="java.lang.Double">
+            <column name="factorUF" precision="53" scale="0" />
+        </property>
+        <property name="factorUsd" type="java.lang.Double">
+            <column name="factorUSD" precision="53" scale="0" />
+        </property>
+        <property name="factorPeso" type="java.lang.Double">
+            <column name="factorPeso" precision="53" scale="0" />
+        </property>
+        <property name="fechaUpdate" type="timestamp">
+            <column name="fechaUpdate" length="23" not-null="true" />
+        </property>
+        <property name="statusMoneda" type="int">
+            <column name="statusMoneda" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

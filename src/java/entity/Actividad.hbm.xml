@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 05-feb-2016 19:16:39 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Actividad" table="actividad" schema="dbo" catalog="bhsmart" optimistic-lock="version">
+        <id name="idActividad" type="int">
+            <column name="idActividad" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombreActividad" type="serializable">
+            <column name="nombreActividad" not-null="true" />
+        </property>
+        <property name="fechaActividad" type="timestamp">
+            <column name="fechaActividad" length="23" not-null="true" />
+        </property>
+        <property name="lugarActividad" type="serializable">
+            <column name="lugarActividad" not-null="true" />
+        </property>
+        <property name="temasActividad" type="serializable">
+            <column name="temasActividad" not-null="true" />
+        </property>
+        <property name="statusActividad" type="int">
+            <column name="statusActividad" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -76,7 +76,7 @@
                               <li><a href="#">Branch</a></li>
                               <li><a href="#">Dpto o area</a></li>
                               <li><a href="#">Client Representative</a></li>
-                              <li><a href="#">Sales Specialist</a></li>
+                              <li><a href="mantenedorSalesSpecialist.jsp">Sales Specialist</a></li>
                             </ul>
                     </li>
                     <li>
@@ -86,7 +86,7 @@
             </div>
             <!-- /.navbar-collapse -->
              <!-- /. User identificación y logout-->
-            <a>Usuario: Usuario de Prueba</a>
+            <a>Usuario: Usuario1</a>
             <br>
             
         </div>
@@ -96,18 +96,17 @@
     <!-- Page Content -->
     <div class="container">
 
-        <div class="row">
-            <div class="col-lg-12 text-center">
+        
                 <h1>Oportunidades</h1>
-                <p class="lead">Realice el registro de Oportunidades</p>
+                <small class="lead">Realice Las siguientes acciones:</small>
                 <ul class="list-unstyled">
-                    <li>Registrar la minuta por visita</li>
+                    <li>Crear/Registrar/Seguir Oportunidades</li>
+                    <li>Crear/Descargar Minuta por visita</li>
                     <li>Referenciar la visita para la rendición de gastos</li>
                     <li>Avanzar la oportunidad hasta convertirla en un negocio</li>
                     <li>Llenado de información para el Forecast automático</li>
                 </ul>
-            </div>
-        </div>
+            
         <!-- /.row -->
 
     </div>

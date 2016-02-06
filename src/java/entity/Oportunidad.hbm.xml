@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 05-feb-2016 19:16:39 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Oportunidad" table="oportunidad" schema="dbo" catalog="bhsmart" optimistic-lock="version">
+        <id name="idOportunidad" type="int">
+            <column name="idOportunidad" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombreOportunidad" type="serializable">
+            <column name="nombreOportunidad" not-null="true" />
+        </property>
+        <property name="idCuenta" type="int">
+            <column name="idCuenta" not-null="true" />
+        </property>
+        <property name="idArea" type="int">
+            <column name="idArea" not-null="true" />
+        </property>
+        <property name="idBranch" type="int">
+            <column name="idBranch" not-null="true" />
+        </property>
+        <property name="idMarca" type="int">
+            <column name="idMarca" not-null="true" />
+        </property>
+        <property name="idContacto" type="int">
+            <column name="idContacto" not-null="true" />
+        </property>
+        <property name="fcreacionOportunidad" type="timestamp">
+            <column name="fCreacionOportunidad" length="23" not-null="true" />
+        </property>
+        <property name="faproxCierreOportunidad" type="timestamp">
+            <column name="fAproxCierreOportunidad" length="23" />
+        </property>
+        <property name="faproxFactOportunidad" type="timestamp">
+            <column name="fAproxFactOportunidad" length="23" />
+        </property>
+        <property name="ventaHw" type="java.lang.Integer">
+            <column name="ventaHW" />
+        </property>
+        <property name="monedaVentaHw" type="java.lang.Integer">
+            <column name="monedaVentaHW" />
+        </property>
+        <property name="margenVentaHw" type="java.lang.Integer">
+            <column name="margenVentaHW" />
+        </property>
+        <property name="ventaLic" type="java.lang.Integer">
+            <column name="ventaLic" />
+        </property>
+        <property name="monedaVentaLic" type="java.lang.Integer">
+            <column name="monedaVentaLic" />
+        </property>
+        <property name="margenVentaLic" type="java.lang.Integer">
+            <column name="margenVentaLic" />
+        </property>
+        <property name="ventaServ" type="java.lang.Integer">
+            <column name="ventaServ" />
+        </property>
+        <property name="monedaVentaServ" type="java.lang.Integer">
+            <column name="monedaVentaServ" />
+        </property>
+        <property name="margenVentaServ" type="java.lang.Integer">
+            <column name="margenVentaServ" />
+        </property>
+        <property name="statusOportunidad" type="int">
+            <column name="statusOportunidad" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

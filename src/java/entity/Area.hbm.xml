@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 05-feb-2016 19:16:39 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Area" table="area" schema="dbo" catalog="bhsmart" optimistic-lock="version">
+        <id name="idArea" type="int">
+            <column name="idArea" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombreArea" type="serializable">
+            <column name="nombreArea" not-null="true" />
+        </property>
+        <property name="statusArea" type="int">
+            <column name="statusArea" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

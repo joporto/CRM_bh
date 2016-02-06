@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 05-feb-2016 19:16:39 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.ClientRep" table="clientRep" schema="dbo" catalog="bhsmart" optimistic-lock="version">
+        <id name="idClientRep" type="int">
+            <column name="idClientRep" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombrePclientRep" type="serializable">
+            <column name="nombrePClientRep" not-null="true" />
+        </property>
+        <property name="nombreSclientRep" type="serializable">
+            <column name="nombreSClientRep" />
+        </property>
+        <property name="apellidoPclientRep" type="serializable">
+            <column name="ApellidoPClientRep" not-null="true" />
+        </property>
+        <property name="apellidoMclientRep" type="serializable">
+            <column name="ApellidoMClientRep" />
+        </property>
+        <property name="statusClientRep" type="int">
+            <column name="statusClientRep" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

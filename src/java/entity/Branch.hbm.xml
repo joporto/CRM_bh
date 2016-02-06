@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 05-feb-2016 19:16:39 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Branch" table="branch" schema="dbo" catalog="bhsmart" optimistic-lock="version">
+        <id name="idBranch" type="int">
+            <column name="idBranch" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombreBranch" type="serializable">
+            <column name="nombreBranch" not-null="true" />
+        </property>
+        <property name="statusBranch" type="int">
+            <column name="statusBranch" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

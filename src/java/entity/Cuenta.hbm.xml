@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 05-feb-2016 19:16:39 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Cuenta" table="cuenta" schema="dbo" catalog="bhsmart" optimistic-lock="version">
+        <id name="idCuenta" type="int">
+            <column name="idCuenta" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombreCuenta" type="serializable">
+            <column name="nombreCuenta" not-null="true" />
+        </property>
+        <property name="idEmpresa" type="int">
+            <column name="idEmpresa" not-null="true" />
+        </property>
+        <property name="propietarioCuenta" type="int">
+            <column name="propietarioCuenta" not-null="true" />
+        </property>
+        <property name="idArea" type="int">
+            <column name="idArea" not-null="true" />
+        </property>
+        <property name="idCuentaPadre" type="java.lang.Integer">
+            <column name="idCuentaPadre" />
+        </property>
+        <property name="idContactoCuenta" type="int">
+            <column name="idContactoCuenta" not-null="true" />
+        </property>
+        <property name="statusCuenta" type="int">
+            <column name="statusCuenta" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="bhsmart" match-schema="dbo"/>
+  <table-filter match-name="branch"/>
+  <table-filter match-name="empresa"/>
+  <table-filter match-name="cuenta"/>
+  <table-filter match-name="moneda"/>
+  <table-filter match-name="rol"/>
+  <table-filter match-name="salesSp"/>
+  <table-filter match-name="contacto"/>
+  <table-filter match-name="area"/>
+  <table-filter match-name="oportunidad"/>
+  <table-filter match-name="sysdiagrams"/>
+  <table-filter match-name="admin"/>
+  <table-filter match-name="marca"/>
+  <table-filter match-name="clientRep"/>
+  <table-filter match-name="actividad"/>
+</hibernate-reverse-engineering>

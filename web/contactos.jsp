@@ -77,7 +77,7 @@
                               <li><a href="#">Branch</a></li>
                               <li><a href="#">Dpto o area</a></li>
                               <li><a href="#">Client Representative</a></li>
-                              <li><a href="#">Sales Specialist</a></li>
+                              <li><a href="mantenedorSalesSpecialist.jsp">Sales Specialist</a></li>
                             </ul>
                     </li>
                     <li>
@@ -87,7 +87,7 @@
             </div>
             <!-- /.navbar-collapse -->
              <!-- /. User identificación y logout-->
-            <a>Usuario: Usuario de Prueba</a>
+            <a>Usuario: Usuario1 </a>
             <br>
             
         </div>
@@ -107,7 +107,76 @@
 
     </div>
     <!-- /.container -->
+    <!-- filtros de búsqueda -->
+    <div class="container jumbotron">
+        <form name="contactosFiltros">
+            Filtros
+            
+        </form>
+    </div>
+    
+    <!-- Tabla de contactos -->
+    <div class="container table-responsive">
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Empresa</th>
+                    <th>Email</th>
+                    <th>Teléfono</th>
+                    <th>Editar</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
 
+        
+    </div>
+    
+    
+    
     <!-- jQuery Version 1.11.1 -->
     <script src="js/jquery.js"></script>
 

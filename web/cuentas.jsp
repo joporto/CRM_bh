@@ -76,7 +76,7 @@
                               <li><a href="#">Branch</a></li>
                               <li><a href="#">Dpto o area</a></li>
                               <li><a href="#">Client Representative</a></li>
-                              <li><a href="#">Sales Specialist</a></li>
+                              <li><a href="mantenedorSalesSpecialist.jsp">Sales Specialist</a></li>
                             </ul>
                     </li>
                     <li>
@@ -86,7 +86,7 @@
             </div>
             <!-- /.navbar-collapse -->
              <!-- /. User identificación y logout-->
-            <a>Usuario: Usuario de Prueba</a>
+            <a>Usuario: Usuario1 </a>
             <br>
            
         </div>

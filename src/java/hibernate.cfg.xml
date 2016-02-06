@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.SQLServer2008Dialect</property>
+    <property name="dialect">org.hibernate.dialect.SQLServer2008Dialect</property>
+    <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+    <property name="hibernate.connection.url">jdbc:sqlserver://172.16.184.175\MSSQLSERVER:1433;databaseName=bhsmart</property>
+    <property name="hibernate.connection.username">sa</property>
+    <property name="hibernate.connection.password">bhouse123.</property>
+    <mapping resource="entity/Admin.hbm.xml"/>
+    <mapping resource="entity/Moneda.hbm.xml"/>
+    <mapping resource="entity/Contacto.hbm.xml"/>
+    <mapping resource="entity/SalesSp.hbm.xml"/>
+    <mapping resource="entity/Sysdiagrams.hbm.xml"/>
+    <mapping resource="entity/Rol.hbm.xml"/>
+    <mapping resource="entity/ClientRep.hbm.xml"/>
+    <mapping resource="entity/Cuenta.hbm.xml"/>
+    <mapping resource="entity/Actividad.hbm.xml"/>
+    <mapping resource="entity/Area.hbm.xml"/>
+    <mapping resource="entity/Marca.hbm.xml"/>
+    <mapping resource="entity/Empresa.hbm.xml"/>
+    <mapping resource="entity/Oportunidad.hbm.xml"/>
+    <mapping resource="entity/Branch.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

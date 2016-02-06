@@ -8,25 +8,25 @@
             <column name="idContacto" />
             <generator class="assigned" />
         </id>
-        <property name="nombrePcontacto" type="serializable">
+        <property name="nombrePcontacto" type="string">
             <column name="nombrePContacto" not-null="true" />
         </property>
-        <property name="nombreScontacto" type="serializable">
+        <property name="nombreScontacto" type="string">
             <column name="nombreSContacto" />
         </property>
-        <property name="apellidoPcontacto" type="serializable">
+        <property name="apellidoPcontacto" type="string">
             <column name="apellidoPContacto" not-null="true" />
         </property>
-        <property name="apellidoMcontacto" type="serializable">
+        <property name="apellidoMcontacto" type="string">
             <column name="apellidoMContacto" />
         </property>
-        <property name="mailContacto" type="serializable">
+        <property name="mailContacto" type="string">
             <column name="mailContacto" />
         </property>
-        <property name="telefonoFijoContacto" type="serializable">
+        <property name="telefonoFijoContacto" type="string">
             <column name="telefonoFijoContacto" />
         </property>
-        <property name="celularContacto" type="serializable">
+        <property name="celularContacto" type="string">
             <column name="CelularContacto" />
         </property>
     </class>

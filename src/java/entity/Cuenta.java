@@ -11,7 +11,7 @@ public class Cuenta  implements java.io.Serializable {
 
 
      private int idCuenta;
-     private Serializable nombreCuenta;
+     private String nombreCuenta;
      private int idEmpresa;
      private int propietarioCuenta;
      private int idArea;
@@ -23,7 +23,7 @@ public class Cuenta  implements java.io.Serializable {
     }
 
 	
-    public Cuenta(int idCuenta, Serializable nombreCuenta, int idEmpresa, int propietarioCuenta, int idArea, int idContactoCuenta, int statusCuenta) {
+    public Cuenta(int idCuenta, String nombreCuenta, int idEmpresa, int propietarioCuenta, int idArea, int idContactoCuenta, int statusCuenta) {
         this.idCuenta = idCuenta;
         this.nombreCuenta = nombreCuenta;
         this.idEmpresa = idEmpresa;
@@ -32,7 +32,7 @@ public class Cuenta  implements java.io.Serializable {
         this.idContactoCuenta = idContactoCuenta;
         this.statusCuenta = statusCuenta;
     }
-    public Cuenta(int idCuenta, Serializable nombreCuenta, int idEmpresa, int propietarioCuenta, int idArea, Integer idCuentaPadre, int idContactoCuenta, int statusCuenta) {
+    public Cuenta(int idCuenta, String nombreCuenta, int idEmpresa, int propietarioCuenta, int idArea, Integer idCuentaPadre, int idContactoCuenta, int statusCuenta) {
        this.idCuenta = idCuenta;
        this.nombreCuenta = nombreCuenta;
        this.idEmpresa = idEmpresa;
@@ -54,7 +54,7 @@ public class Cuenta  implements java.io.Serializable {
         return this.nombreCuenta;
     }
     
-    public void setNombreCuenta(Serializable nombreCuenta) {
+    public void setNombreCuenta(String nombreCuenta) {
         this.nombreCuenta = nombreCuenta;
     }
     public int getIdEmpresa() {

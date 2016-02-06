@@ -8,7 +8,7 @@
             <column name="idEmpresa" />
             <generator class="assigned" />
         </id>
-        <property name="nombreEmpresa" type="serializable">
+        <property name="nombreEmpresa" type="string">
             <column name="nombreEmpresa" not-null="true" />
         </property>
         <property name="statusEmpresa" type="int">

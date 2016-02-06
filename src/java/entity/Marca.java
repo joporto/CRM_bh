@@ -11,13 +11,13 @@ public class Marca  implements java.io.Serializable {
 
 
      private int idMarca;
-     private Serializable nombreMarca;
+     private String nombreMarca;
      private int statusMarca;
 
     public Marca() {
     }
 
-    public Marca(int idMarca, Serializable nombreMarca, int statusMarca) {
+    public Marca(int idMarca, String nombreMarca, int statusMarca) {
        this.idMarca = idMarca;
        this.nombreMarca = nombreMarca;
        this.statusMarca = statusMarca;
@@ -34,7 +34,7 @@ public class Marca  implements java.io.Serializable {
         return this.nombreMarca;
     }
     
-    public void setNombreMarca(Serializable nombreMarca) {
+    public void setNombreMarca(String nombreMarca) {
         this.nombreMarca = nombreMarca;
     }
     public int getStatusMarca() {

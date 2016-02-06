@@ -12,7 +12,7 @@ public class Oportunidad  implements java.io.Serializable {
 
 
      private int idOportunidad;
-     private Serializable nombreOportunidad;
+     private String nombreOportunidad;
      private int idCuenta;
      private int idArea;
      private int idBranch;
@@ -36,7 +36,7 @@ public class Oportunidad  implements java.io.Serializable {
     }
 
 	
-    public Oportunidad(int idOportunidad, Serializable nombreOportunidad, int idCuenta, int idArea, int idBranch, int idMarca, int idContacto, Date fcreacionOportunidad, int statusOportunidad) {
+    public Oportunidad(int idOportunidad, String nombreOportunidad, int idCuenta, int idArea, int idBranch, int idMarca, int idContacto, Date fcreacionOportunidad, int statusOportunidad) {
         this.idOportunidad = idOportunidad;
         this.nombreOportunidad = nombreOportunidad;
         this.idCuenta = idCuenta;
@@ -47,7 +47,7 @@ public class Oportunidad  implements java.io.Serializable {
         this.fcreacionOportunidad = fcreacionOportunidad;
         this.statusOportunidad = statusOportunidad;
     }
-    public Oportunidad(int idOportunidad, Serializable nombreOportunidad, int idCuenta, int idArea, int idBranch, int idMarca, int idContacto, Date fcreacionOportunidad, Date faproxCierreOportunidad, Date faproxFactOportunidad, Integer ventaHw, Integer monedaVentaHw, Integer margenVentaHw, Integer ventaLic, Integer monedaVentaLic, Integer margenVentaLic, Integer ventaServ, Integer monedaVentaServ, Integer margenVentaServ, int statusOportunidad) {
+    public Oportunidad(int idOportunidad, String nombreOportunidad, int idCuenta, int idArea, int idBranch, int idMarca, int idContacto, Date fcreacionOportunidad, Date faproxCierreOportunidad, Date faproxFactOportunidad, Integer ventaHw, Integer monedaVentaHw, Integer margenVentaHw, Integer ventaLic, Integer monedaVentaLic, Integer margenVentaLic, Integer ventaServ, Integer monedaVentaServ, Integer margenVentaServ, int statusOportunidad) {
        this.idOportunidad = idOportunidad;
        this.nombreOportunidad = nombreOportunidad;
        this.idCuenta = idCuenta;
@@ -81,7 +81,7 @@ public class Oportunidad  implements java.io.Serializable {
         return this.nombreOportunidad;
     }
     
-    public void setNombreOportunidad(Serializable nombreOportunidad) {
+    public void setNombreOportunidad(String nombreOportunidad) {
         this.nombreOportunidad = nombreOportunidad;
     }
     public int getIdCuenta() {

@@ -11,13 +11,13 @@ public class Area  implements java.io.Serializable {
 
 
      private int idArea;
-     private Serializable nombreArea;
+     private String nombreArea;
      private int statusArea;
 
     public Area() {
     }
 
-    public Area(int idArea, Serializable nombreArea, int statusArea) {
+    public Area(int idArea, String nombreArea, int statusArea) {
        this.idArea = idArea;
        this.nombreArea = nombreArea;
        this.statusArea = statusArea;
@@ -34,7 +34,7 @@ public class Area  implements java.io.Serializable {
         return this.nombreArea;
     }
     
-    public void setNombreArea(Serializable nombreArea) {
+    public void setNombreArea(String nombreArea) {
         this.nombreArea = nombreArea;
     }
     public int getStatusArea() {

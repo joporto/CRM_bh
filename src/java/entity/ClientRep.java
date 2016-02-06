@@ -11,23 +11,23 @@ public class ClientRep  implements java.io.Serializable {
 
 
      private int idClientRep;
-     private Serializable nombrePclientRep;
-     private Serializable nombreSclientRep;
-     private Serializable apellidoPclientRep;
-     private Serializable apellidoMclientRep;
+     private String nombrePclientRep;
+     private String nombreSclientRep;
+     private String apellidoPclientRep;
+     private String apellidoMclientRep;
      private int statusClientRep;
 
     public ClientRep() {
     }
 
 	
-    public ClientRep(int idClientRep, Serializable nombrePclientRep, Serializable apellidoPclientRep, int statusClientRep) {
+    public ClientRep(int idClientRep, String nombrePclientRep, String apellidoPclientRep, int statusClientRep) {
         this.idClientRep = idClientRep;
         this.nombrePclientRep = nombrePclientRep;
         this.apellidoPclientRep = apellidoPclientRep;
         this.statusClientRep = statusClientRep;
     }
-    public ClientRep(int idClientRep, Serializable nombrePclientRep, Serializable nombreSclientRep, Serializable apellidoPclientRep, Serializable apellidoMclientRep, int statusClientRep) {
+    public ClientRep(int idClientRep, String nombrePclientRep, String nombreSclientRep, String apellidoPclientRep, String apellidoMclientRep, int statusClientRep) {
        this.idClientRep = idClientRep;
        this.nombrePclientRep = nombrePclientRep;
        this.nombreSclientRep = nombreSclientRep;
@@ -47,28 +47,28 @@ public class ClientRep  implements java.io.Serializable {
         return this.nombrePclientRep;
     }
     
-    public void setNombrePclientRep(Serializable nombrePclientRep) {
+    public void setNombrePclientRep(String nombrePclientRep) {
         this.nombrePclientRep = nombrePclientRep;
     }
     public Serializable getNombreSclientRep() {
         return this.nombreSclientRep;
     }
     
-    public void setNombreSclientRep(Serializable nombreSclientRep) {
+    public void setNombreSclientRep(String nombreSclientRep) {
         this.nombreSclientRep = nombreSclientRep;
     }
     public Serializable getApellidoPclientRep() {
         return this.apellidoPclientRep;
     }
     
-    public void setApellidoPclientRep(Serializable apellidoPclientRep) {
+    public void setApellidoPclientRep(String apellidoPclientRep) {
         this.apellidoPclientRep = apellidoPclientRep;
     }
     public Serializable getApellidoMclientRep() {
         return this.apellidoMclientRep;
     }
     
-    public void setApellidoMclientRep(Serializable apellidoMclientRep) {
+    public void setApellidoMclientRep(String apellidoMclientRep) {
         this.apellidoMclientRep = apellidoMclientRep;
     }
     public int getStatusClientRep() {
@@ -78,10 +78,6 @@ public class ClientRep  implements java.io.Serializable {
     public void setStatusClientRep(int statusClientRep) {
         this.statusClientRep = statusClientRep;
     }
-
-
-
-
 }
 
 

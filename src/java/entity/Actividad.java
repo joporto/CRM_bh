@@ -12,16 +12,16 @@ public class Actividad  implements java.io.Serializable {
 
 
      private int idActividad;
-     private Serializable nombreActividad;
+     private String nombreActividad;
      private Date fechaActividad;
-     private Serializable lugarActividad;
-     private Serializable temasActividad;
+     private String lugarActividad;
+     private String temasActividad;
      private int statusActividad;
 
     public Actividad() {
     }
 
-    public Actividad(int idActividad, Serializable nombreActividad, Date fechaActividad, Serializable lugarActividad, Serializable temasActividad, int statusActividad) {
+    public Actividad(int idActividad, String nombreActividad, Date fechaActividad, String lugarActividad, String temasActividad, int statusActividad) {
        this.idActividad = idActividad;
        this.nombreActividad = nombreActividad;
        this.fechaActividad = fechaActividad;
@@ -41,7 +41,7 @@ public class Actividad  implements java.io.Serializable {
         return this.nombreActividad;
     }
     
-    public void setNombreActividad(Serializable nombreActividad) {
+    public void setNombreActividad(String nombreActividad) {
         this.nombreActividad = nombreActividad;
     }
     public Date getFechaActividad() {
@@ -55,14 +55,14 @@ public class Actividad  implements java.io.Serializable {
         return this.lugarActividad;
     }
     
-    public void setLugarActividad(Serializable lugarActividad) {
+    public void setLugarActividad(String lugarActividad) {
         this.lugarActividad = lugarActividad;
     }
     public Serializable getTemasActividad() {
         return this.temasActividad;
     }
     
-    public void setTemasActividad(Serializable temasActividad) {
+    public void setTemasActividad(String temasActividad) {
         this.temasActividad = temasActividad;
     }
     public int getStatusActividad() {
@@ -72,10 +72,6 @@ public class Actividad  implements java.io.Serializable {
     public void setStatusActividad(int statusActividad) {
         this.statusActividad = statusActividad;
     }
-
-
-
-
 }
 
 

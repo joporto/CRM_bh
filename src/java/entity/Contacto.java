@@ -11,24 +11,24 @@ public class Contacto  implements java.io.Serializable {
 
 
      private int idContacto;
-     private Serializable nombrePcontacto;
-     private Serializable nombreScontacto;
-     private Serializable apellidoPcontacto;
-     private Serializable apellidoMcontacto;
-     private Serializable mailContacto;
-     private Serializable telefonoFijoContacto;
-     private Serializable celularContacto;
+     private String nombrePcontacto;
+     private String nombreScontacto;
+     private String apellidoPcontacto;
+     private String apellidoMcontacto;
+     private String mailContacto;
+     private String telefonoFijoContacto;
+     private String celularContacto;
 
     public Contacto() {
     }
 
 	
-    public Contacto(int idContacto, Serializable nombrePcontacto, Serializable apellidoPcontacto) {
+    public Contacto(int idContacto, String nombrePcontacto, String apellidoPcontacto) {
         this.idContacto = idContacto;
         this.nombrePcontacto = nombrePcontacto;
         this.apellidoPcontacto = apellidoPcontacto;
     }
-    public Contacto(int idContacto, Serializable nombrePcontacto, Serializable nombreScontacto, Serializable apellidoPcontacto, Serializable apellidoMcontacto, Serializable mailContacto, Serializable telefonoFijoContacto, Serializable celularContacto) {
+    public Contacto(int idContacto, String nombrePcontacto, String nombreScontacto, String apellidoPcontacto, String apellidoMcontacto, String mailContacto, String telefonoFijoContacto, String celularContacto) {
        this.idContacto = idContacto;
        this.nombrePcontacto = nombrePcontacto;
        this.nombreScontacto = nombreScontacto;
@@ -50,55 +50,51 @@ public class Contacto  implements java.io.Serializable {
         return this.nombrePcontacto;
     }
     
-    public void setNombrePcontacto(Serializable nombrePcontacto) {
+    public void setNombrePcontacto(String nombrePcontacto) {
         this.nombrePcontacto = nombrePcontacto;
     }
     public Serializable getNombreScontacto() {
         return this.nombreScontacto;
     }
     
-    public void setNombreScontacto(Serializable nombreScontacto) {
+    public void setNombreScontacto(String nombreScontacto) {
         this.nombreScontacto = nombreScontacto;
     }
     public Serializable getApellidoPcontacto() {
         return this.apellidoPcontacto;
     }
     
-    public void setApellidoPcontacto(Serializable apellidoPcontacto) {
+    public void setApellidoPcontacto(String apellidoPcontacto) {
         this.apellidoPcontacto = apellidoPcontacto;
     }
     public Serializable getApellidoMcontacto() {
         return this.apellidoMcontacto;
     }
     
-    public void setApellidoMcontacto(Serializable apellidoMcontacto) {
+    public void setApellidoMcontacto(String apellidoMcontacto) {
         this.apellidoMcontacto = apellidoMcontacto;
     }
     public Serializable getMailContacto() {
         return this.mailContacto;
     }
     
-    public void setMailContacto(Serializable mailContacto) {
+    public void setMailContacto(String mailContacto) {
         this.mailContacto = mailContacto;
     }
     public Serializable getTelefonoFijoContacto() {
         return this.telefonoFijoContacto;
     }
     
-    public void setTelefonoFijoContacto(Serializable telefonoFijoContacto) {
+    public void setTelefonoFijoContacto(String telefonoFijoContacto) {
         this.telefonoFijoContacto = telefonoFijoContacto;
     }
     public Serializable getCelularContacto() {
         return this.celularContacto;
     }
     
-    public void setCelularContacto(Serializable celularContacto) {
+    public void setCelularContacto(String celularContacto) {
         this.celularContacto = celularContacto;
     }
-
-
-
-
 }
 
 

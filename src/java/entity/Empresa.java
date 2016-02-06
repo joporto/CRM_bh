@@ -11,13 +11,13 @@ public class Empresa  implements java.io.Serializable {
 
 
      private int idEmpresa;
-     private Serializable nombreEmpresa;
+     private String nombreEmpresa;
      private int statusEmpresa;
 
     public Empresa() {
     }
 
-    public Empresa(int idEmpresa, Serializable nombreEmpresa, int statusEmpresa) {
+    public Empresa(int idEmpresa, String nombreEmpresa, int statusEmpresa) {
        this.idEmpresa = idEmpresa;
        this.nombreEmpresa = nombreEmpresa;
        this.statusEmpresa = statusEmpresa;
@@ -34,7 +34,7 @@ public class Empresa  implements java.io.Serializable {
         return this.nombreEmpresa;
     }
     
-    public void setNombreEmpresa(Serializable nombreEmpresa) {
+    public void setNombreEmpresa(String nombreEmpresa) {
         this.nombreEmpresa = nombreEmpresa;
     }
     public int getStatusEmpresa() {

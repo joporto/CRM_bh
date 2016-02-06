@@ -11,18 +11,18 @@ public class Admin  implements java.io.Serializable {
 
 
      private int idAdmin;
-     private Serializable nombreAdmin;
-     private Serializable codAdmin;
+     private String nombreAdmin;
+     private String codAdmin;
 
     public Admin() {
     }
 
 	
-    public Admin(int idAdmin, Serializable nombreAdmin) {
+    public Admin(int idAdmin, String nombreAdmin) {
         this.idAdmin = idAdmin;
         this.nombreAdmin = nombreAdmin;
     }
-    public Admin(int idAdmin, Serializable nombreAdmin, Serializable codAdmin) {
+    public Admin(int idAdmin, String nombreAdmin, String codAdmin) {
        this.idAdmin = idAdmin;
        this.nombreAdmin = nombreAdmin;
        this.codAdmin = codAdmin;
@@ -39,20 +39,16 @@ public class Admin  implements java.io.Serializable {
         return this.nombreAdmin;
     }
     
-    public void setNombreAdmin(Serializable nombreAdmin) {
+    public void setNombreAdmin(String nombreAdmin) {
         this.nombreAdmin = nombreAdmin;
     }
     public Serializable getCodAdmin() {
         return this.codAdmin;
     }
     
-    public void setCodAdmin(Serializable codAdmin) {
+    public void setCodAdmin(String codAdmin) {
         this.codAdmin = codAdmin;
     }
-
-
-
-
 }
 
 

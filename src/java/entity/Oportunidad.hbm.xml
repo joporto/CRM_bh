@@ -8,7 +8,7 @@
             <column name="idOportunidad" />
             <generator class="assigned" />
         </id>
-        <property name="nombreOportunidad" type="serializable">
+        <property name="nombreOportunidad" type="string">
             <column name="nombreOportunidad" not-null="true" />
         </property>
         <property name="idCuenta" type="int">

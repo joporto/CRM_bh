@@ -8,16 +8,16 @@
             <column name="idClientRep" />
             <generator class="assigned" />
         </id>
-        <property name="nombrePclientRep" type="serializable">
+        <property name="nombrePclientRep" type="string">
             <column name="nombrePClientRep" not-null="true" />
         </property>
-        <property name="nombreSclientRep" type="serializable">
+        <property name="nombreSclientRep" type="string">
             <column name="nombreSClientRep" />
         </property>
-        <property name="apellidoPclientRep" type="serializable">
+        <property name="apellidoPclientRep" type="string">
             <column name="ApellidoPClientRep" not-null="true" />
         </property>
-        <property name="apellidoMclientRep" type="serializable">
+        <property name="apellidoMclientRep" type="string">
             <column name="ApellidoMClientRep" />
         </property>
         <property name="statusClientRep" type="int">

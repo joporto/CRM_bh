@@ -8,7 +8,7 @@
             <column name="idMoneda" />
             <generator class="assigned" />
         </id>
-        <property name="nombreMoneda" type="serializable">
+        <property name="nombreMoneda" type="string">
             <column name="nombreMoneda" not-null="true" />
         </property>
         <property name="factorUf" type="java.lang.Double">

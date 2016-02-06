@@ -8,16 +8,16 @@
             <column name="idActividad" />
             <generator class="assigned" />
         </id>
-        <property name="nombreActividad" type="serializable">
+        <property name="nombreActividad" type="string">
             <column name="nombreActividad" not-null="true" />
         </property>
         <property name="fechaActividad" type="timestamp">
             <column name="fechaActividad" length="23" not-null="true" />
         </property>
-        <property name="lugarActividad" type="serializable">
+        <property name="lugarActividad" type="string">
             <column name="lugarActividad" not-null="true" />
         </property>
-        <property name="temasActividad" type="serializable">
+        <property name="temasActividad" type="string">
             <column name="temasActividad" not-null="true" />
         </property>
         <property name="statusActividad" type="int">

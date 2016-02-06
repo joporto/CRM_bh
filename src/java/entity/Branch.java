@@ -11,13 +11,13 @@ public class Branch  implements java.io.Serializable {
 
 
      private int idBranch;
-     private Serializable nombreBranch;
+     private String nombreBranch;
      private int statusBranch;
 
     public Branch() {
     }
 
-    public Branch(int idBranch, Serializable nombreBranch, int statusBranch) {
+    public Branch(int idBranch, String nombreBranch, int statusBranch) {
        this.idBranch = idBranch;
        this.nombreBranch = nombreBranch;
        this.statusBranch = statusBranch;
@@ -34,7 +34,7 @@ public class Branch  implements java.io.Serializable {
         return this.nombreBranch;
     }
     
-    public void setNombreBranch(Serializable nombreBranch) {
+    public void setNombreBranch(String nombreBranch) {
         this.nombreBranch = nombreBranch;
     }
     public int getStatusBranch() {
@@ -44,10 +44,6 @@ public class Branch  implements java.io.Serializable {
     public void setStatusBranch(int statusBranch) {
         this.statusBranch = statusBranch;
     }
-
-
-
-
 }
 
 

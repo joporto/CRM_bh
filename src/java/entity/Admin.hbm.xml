@@ -8,10 +8,10 @@
             <column name="idAdmin" />
             <generator class="assigned" />
         </id>
-        <property name="nombreAdmin" type="serializable">
+        <property name="nombreAdmin" type="string">
             <column name="nombreAdmin" not-null="true" />
         </property>
-        <property name="codAdmin" type="serializable">
+        <property name="codAdmin" type="string">
             <column name="codAdmin" />
         </property>
     </class>

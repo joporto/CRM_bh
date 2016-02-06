@@ -12,7 +12,7 @@ public class Moneda  implements java.io.Serializable {
 
 
      private int idMoneda;
-     private Serializable nombreMoneda;
+     private String nombreMoneda;
      private Double factorUf;
      private Double factorUsd;
      private Double factorPeso;
@@ -23,13 +23,13 @@ public class Moneda  implements java.io.Serializable {
     }
 
 	
-    public Moneda(int idMoneda, Serializable nombreMoneda, Date fechaUpdate, int statusMoneda) {
+    public Moneda(int idMoneda, String nombreMoneda, Date fechaUpdate, int statusMoneda) {
         this.idMoneda = idMoneda;
         this.nombreMoneda = nombreMoneda;
         this.fechaUpdate = fechaUpdate;
         this.statusMoneda = statusMoneda;
     }
-    public Moneda(int idMoneda, Serializable nombreMoneda, Double factorUf, Double factorUsd, Double factorPeso, Date fechaUpdate, int statusMoneda) {
+    public Moneda(int idMoneda, String nombreMoneda, Double factorUf, Double factorUsd, Double factorPeso, Date fechaUpdate, int statusMoneda) {
        this.idMoneda = idMoneda;
        this.nombreMoneda = nombreMoneda;
        this.factorUf = factorUf;
@@ -50,7 +50,7 @@ public class Moneda  implements java.io.Serializable {
         return this.nombreMoneda;
     }
     
-    public void setNombreMoneda(Serializable nombreMoneda) {
+    public void setNombreMoneda(String nombreMoneda) {
         this.nombreMoneda = nombreMoneda;
     }
     public Double getFactorUf() {

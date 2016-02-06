@@ -11,13 +11,13 @@ public class Rol  implements java.io.Serializable {
 
 
      private int idRol;
-     private Serializable nombreRol;
+     private String nombreRol;
      private int statusRol;
 
     public Rol() {
     }
 
-    public Rol(int idRol, Serializable nombreRol, int statusRol) {
+    public Rol(int idRol, String nombreRol, int statusRol) {
        this.idRol = idRol;
        this.nombreRol = nombreRol;
        this.statusRol = statusRol;
@@ -34,7 +34,7 @@ public class Rol  implements java.io.Serializable {
         return this.nombreRol;
     }
     
-    public void setNombreRol(Serializable nombreRol) {
+    public void setNombreRol(String nombreRol) {
         this.nombreRol = nombreRol;
     }
     public int getStatusRol() {

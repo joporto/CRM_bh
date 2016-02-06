@@ -36,17 +36,18 @@
     </head>
     <body>
     <!-- Navigation -->
+    <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
+                    <span class="sr-only">Menú</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-               <a class="navbar-brand" href="home.jsp">BH Smart</a>
+                 <a class="navbar-brand" href="home.jsp">BH Smart</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -79,18 +80,20 @@
                               <li><a href="mantenedorSalesSpecialist.jsp">Sales Specialist</a></li>
                             </ul>
                     </li>
-                    <li>
-                         <a style="color:white" href="index.html">Cerrar Sesión</a>
-                    </li>
                 </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-             <!-- /. User identificación y logout-->
-            <a> Usuario: Usuario1 </a>
-            <br>
-           
+                <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html"><span class="glyphicon glyphicon-log-in"></span> Cerrar Sesión</a></li>
+      </ul>
+                
         </div>
-        <!-- /.container -->
+            <!-- /.navbar-collapse --> 
+           
+            <!-- /. User identificación y logout-->
+            <a>Usuario: Usuario1 </a>
+            <br>
+            
+        </div>
+    <!-- /.container -->
     </nav>
 
     <!-- Page Content -->

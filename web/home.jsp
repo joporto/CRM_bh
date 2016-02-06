@@ -145,7 +145,7 @@
         <li><a href="index.html"><span class="glyphicon glyphicon-log-in"></span> Cerrar Sesión</a></li>
       </ul>
                 
-            </div>
+        </div>
             <!-- /.navbar-collapse --> 
            
             <!-- /. User identificación y logout-->
@@ -153,7 +153,7 @@
             <br>
             
         </div>
-        <!-- /.container -->
+    <!-- /.container -->
     </nav>
     <!-- Page Content -->
     <div class="container">
